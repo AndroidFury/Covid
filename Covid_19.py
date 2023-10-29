@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 data = pd.read_csv("Covid_19.csv")
-# Convert 'Date_reported' column to datetime format for easier analysis
 data['Date_reported'] = pd.to_datetime(data['Date_reported'])
 
 # 1. Line Plot: Global daily cases over time
